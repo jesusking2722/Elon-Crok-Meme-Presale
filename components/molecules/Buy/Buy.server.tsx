@@ -4,7 +4,9 @@ import {
   CountTimer,
   Button,
   Alert,
+  Input,
 } from "@/components/atoms";
+import Icon from "@/public/assets/logo.svg";
 
 const styles = {
   container:
@@ -32,6 +34,23 @@ const Buy = () => {
           title=""
           message="Token price increases by 0.5 cent every 48 hours and will launch when it reaches 40 cents. Benefit Huge from our Smart AI Staking – the sooner you invest, the better your returns."
         />
+        <div className="grid grid-cols-2 gap-8">
+          <Input
+            label="You Pay (ETH)"
+            placehoder="Enter ETH"
+            value=""
+            icon={Icon}
+            onChange={(e) => {}}
+          />
+          <Input
+            label="You Receive ($GMF)"
+            placehoder="Enter GMF"
+            value=""
+            icon={Icon}
+            onChange={(e) => {}}
+          />
+        </div>
+        <Button type="primary" label="Connect Wallet" width="full" />
       </div>
     </GradientContainer>
   );

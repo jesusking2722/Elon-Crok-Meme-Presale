@@ -1,7 +1,7 @@
 import next from "next";
 
 interface ButtonProps {
-  type: "default" | "colorful" | "link" | "text" | "icon";
+  type: "default" | "colorful" | "link" | "text" | "icon" | "primary";
   label?: string;
   href?: string;
   width?: "full";
@@ -27,6 +27,8 @@ const Button: React.FC<ButtonProps> = ({
           ? "bg-gradient hover:opacity-90 transition-all duration-300 ease-in-out"
           : type === "default"
           ? "bg-[#1F1F21] hover:bg-[#353537]"
+          : type === "primary"
+          ? "bg-[#3069FF] hover:bg-[#4076FF]"
           : ""
       }`}
     >

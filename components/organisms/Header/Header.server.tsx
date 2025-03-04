@@ -6,7 +6,7 @@ import { Button } from "@/components/atoms/Button";
 
 const styles = {
   container: "w-full fixed mt-8 rounded-lg h-[80px]",
-  childContainer: "relative w-[83%] mx-auto h-full bg-gradient rounded-lg",
+  childContainer: "relative w-[83%] mx-auto h-full bg-gradient rounded-lg z-50",
   subChildContainer:
     "absolute inset-[1px] bg-black flex flex-row items-center justify-between rounded-lg px-4",
   navContainer: "flex flex-row items-center gap-4",
