@@ -37,7 +37,7 @@ const Header = () => {
             </Link>
           </nav>
           <div>
-            <Button type="colorful" label="BUY NOW" />
+            <Button type="colorful" label="BUY NOW!" />
           </div>
         </div>
       </div>

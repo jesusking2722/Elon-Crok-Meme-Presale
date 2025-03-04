@@ -1,0 +1,1 @@
+export {default as GradientContainer} from './GradientContainer.server';

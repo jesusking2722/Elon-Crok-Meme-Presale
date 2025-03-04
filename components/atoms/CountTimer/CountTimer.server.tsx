@@ -12,6 +12,14 @@ interface CountdownTimerProps {
   targetDate: string; // Expecting a string date input (ISO format)
 }
 
+const styles = {
+  container:
+    "flex justify-center items-center space-x-6 font-cartoon text-2xl text-white",
+  button:
+    "text-center border border-[#3D3D3F] bg-[#131314] w-24 h-24 flex flex-col items-center justify-center rounded-lg gap-4",
+  label: "block text-sm",
+};
+
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(getTimeLeft(targetDate));
 
@@ -45,22 +53,22 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }
 
   return (
-    <div className="flex justify-center items-center space-x-6 font-cartoon text-2xl text-white bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-lg p-6 shadow-lg">
-      <div className="text-center">
-        <span className="block text-lg">Days</span>
+    <div className={styles.container}>
+      <div className={styles.button}>
         <span>{timeLeft.days}</span>
+        <span className={styles.label}>DAYS</span>
       </div>
-      <div className="text-center">
-        <span className="block text-lg">Hours</span>
+      <div className={styles.button}>
         <span>{timeLeft.hours}</span>
+        <span className={styles.label}>HOURS</span>
       </div>
-      <div className="text-center">
-        <span className="block text-lg">Minutes</span>
+      <div className={styles.button}>
         <span>{timeLeft.minutes}</span>
+        <span className={styles.label}>MINUTES</span>
       </div>
-      <div className="text-center">
-        <span className="block text-lg">Seconds</span>
+      <div className={styles.button}>
         <span>{timeLeft.seconds}</span>
+        <span className={styles.label}>SECONDS</span>
       </div>
     </div>
   );

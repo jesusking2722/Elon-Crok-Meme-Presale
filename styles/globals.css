@@ -32,21 +32,3 @@ body {
 .bg-gradient {
   background: linear-gradient(135deg, #ef4444, #db2777, #7e22ce);
 }
-
-.shadow-gradient {
-  height: 50%;
-  width: 50%;
-  background: #1c1c1c;
-  aspect-ratio: 16/9;
-  border-radius: 15px;
-}
-
-.shadow-gradient::before {
-  content: "";
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  background: linear-gradient(90deg, purple, green, hotpink);
-  z-index: -1;
-  filter: blur(20px);
-}
