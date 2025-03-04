@@ -10,8 +10,9 @@ const styles = {
 const Container = ({ children }: { children: ReactNode }) => {
   return (
     <div className={styles.container}>
+      <div className="h-8"></div>
       <Header />
-      <div className="h-40"></div>
+      <div className="h-24"></div>
       <div className={styles.childrenContainer}>{children}</div>
     </div>
   );

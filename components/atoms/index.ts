@@ -4,3 +4,4 @@ export {GradientContainer} from './GradientContainer';
 export {Progresser} from './Progresser';
 export {Alert} from './Alert';
 export {Input} from './Input';
+export {TokenCard} from './TokenCard';
