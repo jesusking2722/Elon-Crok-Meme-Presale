@@ -1,0 +1,1 @@
+export {default as HowToBuy} from "./HowToBuy.server";
