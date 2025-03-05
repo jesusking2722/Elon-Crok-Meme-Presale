@@ -9,3 +9,5 @@ export {TransactionCard} from './TransactionCard';
 export type {TransactionCardItemType} from './TransactionCard';
 export {AccordianGroup} from './AccordianGroup';
 export type {AccordianGroupItemType} from './AccordianGroup';
+export {NormalCardGroup} from "./NormalCardGroup";
+export type {NormalCardGroupItemType} from "./NormalCardGroup";
