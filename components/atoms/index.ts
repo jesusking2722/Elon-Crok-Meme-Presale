@@ -7,3 +7,5 @@ export {Input} from './Input';
 export {TokenCard} from './TokenCard';
 export {TransactionCard} from './TransactionCard';
 export type {TransactionCardItemType} from './TransactionCard';
+export {AccordianGroup} from './AccordianGroup';
+export type {AccordianGroupItemType} from './AccordianGroup';

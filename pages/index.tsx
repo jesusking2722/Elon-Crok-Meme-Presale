@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Container, Header } from "@/components/organisms";
+import { About, Container } from "@/components/organisms";
 import { Hero } from "@/components/organisms/Hero";
 
 const geistSans = Geist({
@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <Container>
       <Hero />
+      <About />
     </Container>
   );
 }
