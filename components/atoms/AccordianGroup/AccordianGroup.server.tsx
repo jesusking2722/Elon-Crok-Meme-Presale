@@ -20,7 +20,7 @@ const AccordianGroup = ({ items, width, onSelect }: AccordianGroupProps) => {
     container: `w-full ${dynamicWidth} flex flex-col gap-4`,
     item: {
       container:
-        "w-full border border-blue-500 rounded-2xl transition-all duration-300 ease-in-out p-2",
+        "w-full border border-blue-500 rounded-2xl transition-all duration-300 ease-in-out p-2 cursor-pointer",
       titleContainer: "w-full flex flex-row items-center justify-between p-2",
       title: "text-white font-semibold text-lg",
       icon: "text-white w-6 h-6 transition-all duration-300 ease-in-out",
