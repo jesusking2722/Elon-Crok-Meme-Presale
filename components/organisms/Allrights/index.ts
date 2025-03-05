@@ -1,0 +1,1 @@
+export {default as Allrights} from "./Allrights.server";

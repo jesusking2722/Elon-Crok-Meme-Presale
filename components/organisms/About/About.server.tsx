@@ -37,16 +37,15 @@ const About = () => {
   const [accordians, setAccordians] = useState<AccordianGroupItemType[]>(
     initialAccordianItems
   );
+
   const handleAccordianSelect = (idx: number) => {
-    const updated = accordians.map((accordian, index) => {
-      if (index === idx) {
-        const active = accordian.active;
-        accordian.active = !active;
-      }
-      return accordian;
-    });
-    setAccordians(updated);
+    setAccordians(
+      accordians.map((accordian, index) =>
+        index === idx ? { ...accordian, active: !accordian.active } : accordian
+      )
+    );
   };
+
   return (
     <div className={styles.container}>
       <AccordianGroup

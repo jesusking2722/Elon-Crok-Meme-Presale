@@ -1,5 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { About, Container, HowToBuy, WhyChoose } from "@/components/organisms";
+import {
+  About,
+  Allrights,
+  Container,
+  Faq,
+  HowToBuy,
+  Socials,
+  WhyChoose,
+} from "@/components/organisms";
 import { Hero } from "@/components/organisms/Hero";
 
 const geistSans = Geist({
@@ -19,6 +27,9 @@ export default function Home() {
       <About />
       <WhyChoose />
       <HowToBuy />
+      <Faq />
+      <Allrights />
+      <Socials />
     </Container>
   );
 }
